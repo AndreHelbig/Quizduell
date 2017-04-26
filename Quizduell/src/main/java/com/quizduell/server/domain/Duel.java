@@ -6,13 +6,12 @@ import javax.persistence.*;
 
 import lombok.Getter;
 import lombok.Setter;
-import org.hibernate.search.annotations.Indexed;
+
 
 /**
  *
  * @author Andre
  */
-@Indexed
 @Entity
 public class Duel {
     private static final int TURNS = 6;

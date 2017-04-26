@@ -5,14 +5,12 @@ import java.util.UUID;
 import javax.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
-import org.hibernate.search.annotations.Indexed;
 
 /**
  *
  * @author Andre
  */
 @Entity
-@Indexed
 public class Turn {
     private static final int MAX_QUESTIONS = 3;
     @Getter

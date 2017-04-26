@@ -6,7 +6,6 @@ import java.util.UUID;
 import javax.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
-import org.hibernate.search.annotations.Indexed;
 
 /**
  *
@@ -14,7 +13,6 @@ import org.hibernate.search.annotations.Indexed;
  */
 
 @Entity
-@Indexed
 public class Player implements Serializable {
     @Getter
     @Setter

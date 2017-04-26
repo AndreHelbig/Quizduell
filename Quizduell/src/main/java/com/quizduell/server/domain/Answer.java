@@ -12,7 +12,7 @@ import org.hibernate.search.annotations.Indexed;
  */
 @Entity
 @Indexed
-class Answer {
+public class Answer {
     @Getter
     @Setter
     @Id

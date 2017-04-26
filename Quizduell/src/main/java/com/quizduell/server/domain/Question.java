@@ -5,14 +5,12 @@ import java.util.UUID;
 import javax.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
-import org.hibernate.search.annotations.Indexed;
 
 /**
  *
  * @author Andre
  */
 @Entity
-@Indexed
 public class Question {
     @Getter
     @Setter
@@ -32,4 +30,8 @@ public class Question {
     @Setter
     @ManyToOne
     private Turn turn;
+
+    public void setDuel(Duel duel) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
