@@ -31,10 +31,5 @@ public class Question {
     @Getter
     @Setter
     @ManyToOne
-    private Category category;
-    
-    @Getter
-    @Setter
-    @ManyToOne
     private Turn turn;
 }

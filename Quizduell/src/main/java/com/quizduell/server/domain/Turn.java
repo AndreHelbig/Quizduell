@@ -22,11 +22,6 @@ public class Turn {
 
     @Getter
     @Setter
-    @OneToOne
-    private Category category;
-
-    @Getter
-    @Setter
     @OneToMany
     private List<Question> questionList;
 

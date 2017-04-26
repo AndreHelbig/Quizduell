@@ -17,7 +17,7 @@ class Answer {
     @Setter
     @Id
     private UUID uuid;
-
+        
     @Getter
     @Setter
     private String text;
