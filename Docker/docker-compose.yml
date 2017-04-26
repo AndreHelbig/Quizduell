@@ -54,11 +54,11 @@ services:
     hostname: rest1
     build:
       context: .
-      dockerfile: SERVER-DOCKERFILE
+      dockerfile: /SERVER-DOCKERFILE
     expose:
       - 8081
     ports:
-      - "18081:8081"
+      - "18081:8081"G
     links: 
       - haproxy_db:haproxy_db
     depends_on: 
