@@ -1,0 +1,15 @@
+FROM java:8
+
+# Install maven
+RUN apt-get update
+RUN apt-get install -y maven
+
+RUN git clone https://github.com/AndreHelbig/Quizduell.git fudw && \
+	cd fudw/Quizduell/core && \
+	mvn clean install && \
+	cd ../../ && \
+	rm -rf fudw
+
+ENTRYPOINT git clone https://github.com/AndreHelbig/Quizduell.git fudw && \
+	cd fudw/Quizduell/core && \
+	mvn clean install exec:java
